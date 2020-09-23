@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    config:
+      enabled: false
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        # 命名空间
+        namespace: e5a7d839-de59-4b55-ae64-79ab794046fa
+        # 组名
+        group: DEFAULT_GROUP
+      discovery:
+        enabled: true
+        server-addr: localhost:8848
+          # 命名空间
+        namespace: e5a7d839-de59-4b55-ae64-79ab794046fa

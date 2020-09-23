@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ConfigController {
 
-    @Value("${useLocalCache:false}")
+    @Value("${useLocalCache}")
     private boolean useLocalCache;
 
     /**

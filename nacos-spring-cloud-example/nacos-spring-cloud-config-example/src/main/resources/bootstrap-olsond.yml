@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: example
+  cloud:
+    config:
+        enabled: false
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        # 命名空间
+        namespace: olsond-dev
+        # 组名
+        group: DEFAULT_GROUP
